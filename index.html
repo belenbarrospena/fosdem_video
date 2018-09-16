@@ -197,7 +197,7 @@
             <div class="row" id="video_starts_too_late">
               <div class="col-sm-6">
                 <div class="embed-responsive embed-responsive-16by9">
-                  <video id="video-pre" class="embed-responsive-item" controls="controls" src="videos/pre-video.webm"></video>
+                  <video id="video-pre" class="embed-responsive-item" controls="controls" src="videos/pre_video.webm"></video>
                   <!--img src="video_starts_too_late.png" class="image-responsive"-->
                 </div>
                 <p class="help-text">Find the correct start time, pause the video and click the big green button.</p>
@@ -238,7 +238,7 @@
               <div class="col-sm-6">
                 <div class="embed-responsive embed-responsive-16by9">
                   <!--img src="video_ends_too_early.png" class="image-responsive"-->
-                  <video class="embed-responsive-item" controls="controls" src="videos/post_video.webm"></video-->
+                  <video class="embed-responsive-item" controls="controls" src="videos/post_video.webm"></video>
                 </div>
                 <p class="help-text">Find the correct end time, pause the video and click the big green button.</p>
                 <div class="alert alert-success" role="alert" style="display:none;">
@@ -448,14 +448,14 @@ $(document).ready(function() {
     // show the notification for new start time set
     $(".set_start_time").click(function() {
       $(this).closest("div").find(".alert-success").fadeOut();
-      $(this).closest("div").find(".alert-success").html("<strong>New start time set</strong><p>If you are curious, the new video start time is: 01:06</p>");
+      $(this).closest("div").find(".alert-success").html("<strong>New start time set</strong><p>If you are curious, the new video start time is: 03:16</p>");
       $(this).closest("div").find(".alert-success").fadeIn();
     });
 
     // show the notification for new end time set
     $(".set_end_time").click(function() {
       $(this).closest("div").find(".alert-success").fadeOut();
-      $(this).closest("div").find(".alert-success").html("<strong>New end time set</strong><p>If you are curious, the new video end time is: 09:24</p>");
+      $(this).closest("div").find(".alert-success").html("<strong>New end time set</strong><p>If you are curious, the new video end time is: 05:24</p>");
       $(this).closest("div").find(".alert-success").fadeIn();
     });
 
